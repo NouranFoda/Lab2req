@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            TODO: add reference external style.css file
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}">
+        <title>Sign Up</title>
+    </head>
+    <!--
+        TODO: import alert_welcome function from external utils.js file
+        TODO: call alert_welcome
+       
+    -->
+    <script type="text/javascript" src=".\static\js\utils.js"></script>
+    <script>alert_welcome()</script>
+    <!--
+        TODO: create form html components to capture user input
+        TODO: make sure to set required inputs
+        TODO: add styling from style.css to submit button
+        
+    --> 
+    <form method="post" action="/signup">
+        <h3>Sign UP</h3>
+        <input placeholder="Email" name="email"></input>
+        <input placeholder="username" name="username" ></input>
+        <input type="password" placeholder="password" name="password"></input>
+        <button type="sumbit">SignUp</button>
+      </form>
+</html>
